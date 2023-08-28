@@ -1,0 +1,36 @@
+package steps;
+
+import io.cucumber.java.en.*;
+
+public class Login 
+{
+  @Given("User launch the browser")
+   public void user_launch_the_browser() 
+  {
+	  System.out.println("iam don");
+  }
+
+	@When("User enter the valid email")
+	public void user_enter_the_valid_email() 
+	{
+		System.out.println("iam don");
+	}
+
+	@When("User enter the valid password")
+	public void user_enter_the_valid_password() 
+	{
+		System.out.println("iam don");    
+	}
+
+	@When("Click on login button")
+	public void click_on_login_button() 
+	{
+		System.out.println("iam don");
+	}
+
+	@Then("User navigate to home page")
+	public void user_navigate_to_home_page() 
+	{
+		System.out.println("iam don");	
+	}
+}

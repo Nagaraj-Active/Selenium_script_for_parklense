@@ -1,0 +1,30 @@
+package Pom;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+
+public class Client_page 
+{
+	
+	@FindBy(xpath="//input[@placeholder='Search By Name']")                       WebElement search_field;
+	//@FindBy(xpath="//input[@placeholder='Search By Name']")                     WebElement searh_field;
+	@FindBy(xpath="//button[@class='btn-i-gray3 btn-icon-text commangap-3']")     WebElement C_reset_btn;
+	@FindBy(xpath="//button[@class='btn-i-secondary btn-icon-text commangap-3']") WebElement new_btn;
+	@FindBy(xpath="//input[@placeholder='Search By Name']")                       WebElement serh_field;
+	@FindBy(xpath="//input[@placeholder='Search By Name']")                       WebElement seach_field;
+    @FindBy(xpath="//select[@class=\"form-select form-select ms-2 me-2\"]")       WebElement page_drop_down;
+    Select sel=new Select(page_drop_down);
+    
+    
+    //new client name
+    @FindBy(xpath="//input[@placeholder='Client Name']")                 WebElement name;
+    @FindBy(xpath="//input[@placeholder='Mobile']")                      WebElement mobile;
+    @FindBy(xpath="//input[@placeholder='Email']")                       WebElement Email;
+    @FindBy(xpath="//input[@placeholder='Address 1']")                   WebElement adress1;
+    @FindBy(xpath="//input[@placeholder='Address 2']")                   WebElement adress2;
+    @FindBy(xpath="//input[@placeholder='Address 3']")                   WebElement adress3;
+    @FindBy(xpath="(//select[@formcontrolname=\"DropdownControl\"])[1]") WebElement Country_drop;
+    @FindBy(xpath="(//select[@formcontrolname=\"DropdownControl\"])[2]") WebElement State_drop;
+    @FindBy(xpath="(//select[@formcontrolname=\"DropdownControl\"])[3]") WebElement City_drop;
+}

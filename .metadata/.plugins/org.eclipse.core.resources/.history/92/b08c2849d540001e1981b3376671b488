@@ -1,0 +1,9 @@
+Feature: Login to the functionalities
+
+Scenario: login with valid credentials
+Given User launch the browser
+ When User enter the valid email
+ And User enter the valid password
+ And Click on login button
+ Then User navigate to home page 
+

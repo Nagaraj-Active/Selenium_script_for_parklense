@@ -1,0 +1,36 @@
+Feature: Login to the functionalities
+
+  Scenario: login with valid credentials
+    Given User launch the browser
+    When User enter the valid email
+    And User enter the valid password
+    And Click on login button
+    Then User navigate to home page
+
+  Scenario: login with invalid email
+    Given User launch the browser
+    When User enter the invalid mail_id
+    And User enter the valid password
+    And click on the login button
+    Then Proper error message should be displayed
+
+  Scenario: login with invalid password
+    Given User launch the browser
+    When User enter the valid mail_id
+    And User enter the invalid password
+    And click on the login button
+    Then Proper error message should be displayed
+
+  Scenario: login with invalid email_id and password
+    Given User launch the browser
+    When User enter the invalid mail_id
+    And User enter the invalid password
+    And click on the login button
+    Then Proper error message should be displayed
+
+  Scenario: login with empty credentials
+    Given User launch the browser
+    When User keep the empty mail id text field
+    And User keep the empty password text field
+    And Click on the login button
+    Then Proper error message should be displayed

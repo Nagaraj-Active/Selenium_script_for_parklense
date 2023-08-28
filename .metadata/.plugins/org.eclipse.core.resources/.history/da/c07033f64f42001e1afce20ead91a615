@@ -1,0 +1,27 @@
+package Pom;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Dashboard_page 
+{
+
+	
+	
+	
+	
+	
+	
+	@FindBy (xpath ="(//div[@class='pp-4 ppt-2'])[1]/h1")                  WebElement Prspects;
+	@FindBy (xpath ="(//div[@class='pp-4 ppt-2'])[2]/h1")                  WebElement Lot;
+    @FindBy (xpath ="(//div[@class='pp-4 ppt-2'])[3]/h1")                  WebElement Stalls;
+    @FindBy (xpath ="(//div[@class='pp-4 ppt-2'])[4]/h1")                  WebElement Live_camera;
+    @FindBy (xpath ="(//div[@class='pp-4 ppt-2'])[5]/h1")                  WebElement Down_camera;
+    @FindBy (xpath ="(//div[@class='table-responsive'])[1]/../div/h4[2]/a")WebElement expiry_this_month;
+    @FindBy (xpath ="(//div[@class='table-responsive'])[3]/../div/h4[2]/a")WebElement lot_maintainance;
+
+
+
+
+
+}

@@ -1,0 +1,38 @@
+package Pom;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+
+public class B_Client 
+{
+	
+	@FindBy(xpath="//input[@placeholder='Search By Name']")                       WebElement search_field;
+	
+	@FindBy(xpath="//button[@class='btn-i-gray3 btn-icon-text commangap-3']")     WebElement C_reset_btn;
+	@FindBy(xpath="//button[@class='btn-i-secondary btn-icon-text commangap-3']") WebElement new_btn;
+	@FindBy(xpath="//input[@placeholder='Search By Name']")                       WebElement serh_field;
+	@FindBy(xpath="//input[@placeholder='Search By Name']")                       WebElement seach_field;
+    @FindBy(xpath="//select[@class='form-select form-select ms-2 me-2']")       WebElement page_drop_down;
+    Select sel=new Select(page_drop_down);
+    
+    
+    //new client page
+    @FindBy(xpath="//input[@placeholder='Client Name']")                 WebElement name;
+    @FindBy(xpath="//input[@placeholder='Mobile']")                      WebElement mobile;
+    @FindBy(xpath="//input[@placeholder='Email']")                       WebElement Email;
+    @FindBy(xpath="//input[@placeholder='Address 1']")                   WebElement adress1;
+    @FindBy(xpath="//input[@placeholder='Address 2']")                   WebElement adress2;
+    @FindBy(xpath="//input[@placeholder='Address 3']")                   WebElement adress3;
+    @FindBy(xpath="(//select[@formcontrolname='DropdownControl'])[1]") WebElement Country_drop;
+    @FindBy(xpath="(//select[@formcontrolname='DropdownControl'])[2]") WebElement State_drop;
+    @FindBy(xpath="(//select[@formcontrolname='DropdownControl'])[3]") WebElement City_drop;
+    @FindBy(xpath="(//select[@formcontrolname=\"DropdownControl\"])[4]") WebElement Client_drop;
+    @FindBy(xpath="(//button[@type='button'])[1]")                       WebElement Start_date;
+    @FindBy(xpath="(//button[@type='button'])[2]")                       WebElement end_date;
+    @FindBy(xpath="(//button[@type='button'])[3]")                       WebElement cancel_button;
+    @FindBy(xpath="(//button[@type='button'])[3]/../button[2]")          WebElement save_button;
+    
+    @FindBy(xpath="(//input[@type='radio' and @formcontrolname='radio'])[1]") WebElement radio_active;
+    @FindBy(xpath="(//input[@type='radio' and @formcontrolname='radio'])[2]") WebElement radio_in_active;
+}
